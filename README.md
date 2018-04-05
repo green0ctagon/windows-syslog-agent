@@ -6,5 +6,7 @@ This script collects, sorts, parses, and forwards events from each of the host's
 
 Just add the IP and Port of your syslog server to the script, and it is ready to go.  Be sure to run as admin (otherwise the script won't be able to access "Security" and other other sensitive logging facilities.
 
-If you are running this in a restricted environment:
-powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -File win_syslog.ps1
+When you run the script, it will begin polling on a 60 second basis.  It will take 60 seconds before you start receiving logs.
+![alt text](http://81.4.111.62/ScreenShots/logger.PNG)
+
+
