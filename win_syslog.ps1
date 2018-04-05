@@ -15,7 +15,7 @@ $day = $time.DayOfYear
 $yr = $time.Year
 
 $ip = "192.168.68.153"  # rsyslog server 
-$port = 514
+$port = 514		# server port
 $address = [system.net.IPAddress]::Parse($ip)
 $server = New-Object System.Net.IPEndPoint $address, $port
 
