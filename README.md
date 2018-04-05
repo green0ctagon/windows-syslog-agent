@@ -9,4 +9,7 @@ Just add the IP and Port of your syslog server to the script, and it is ready to
 When you run the script, it will begin polling on a 60 second basis.  It will take 60 seconds before you start receiving logs.
 ![alt text](http://81.4.111.62/ScreenShots/logger.PNG)
 
+This is the current logging format.  Each line is tagged with the source hostname in case you are collecting logs from multiple sources. (I've blocked out my hostname from each line, and my username from the authentication logs.)
+![alt text](http://81.4.111.62/ScreenShots/logs.PNG)
+
 
