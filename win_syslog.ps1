@@ -1,10 +1,7 @@
-#+++++++++___
-#++ ((-))  o - - ___
-#+++++++++__|     o - -___
-# Windows Syslog Agent   o \
-# Written: Lee Mazzoleni  o \
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
+# Windows Event Forwarder w/ Remote Logging
+# Compatible w/ PowerShell 2.0-4.0 (win7,2008,2012,etc)
+# Compatible w/ Syslog/Rsyslog/any UDP syslog server
+# Written: Lee Mazzoleni, OSCP, GPEN
 
 "Logging service started"
 
