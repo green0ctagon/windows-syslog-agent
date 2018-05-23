@@ -83,7 +83,8 @@ while ("ok") {
                 $hname = $_.MachineName
                 $severity = $_.LevelDisplayName
                 $timestamp = $_.TimeCreated
-                $log = -join $($hname,' - ',$timestamp,' - src_app:','"',$source,'" ','src_user:','"',$user,'" ','msg:','"',$message,'" ','eventID:','"',$event_id,'" ','type:','"',$severity,'" ')
+		$log = -join $('HostName:"',$hname,'" TimeStamp:"',$timestamp,'" LogType:"',$source,'" ','SrcUser:"',$user,'" Message:"',$message,'" EventID:"',$event_id,'" Severity:"',$severity,'"')
+                #$log = -join $($hname,' - ',$timestamp,' - src_app:','"',$source,'" ','src_user:','"',$user,'" ','msg:','"',$message,'" ','eventID:','"',$event_id,'" ','type:','"',$severity,'" ')
                 $Enc = [System.Text.Encoding]::ASCII
                 $Buffer = $Enc.GetBytes($log)
 	            $sock.Connect($server)
