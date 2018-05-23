@@ -58,6 +58,8 @@ while ("ok") {
             }
         }    
         if ($event_pool.Count -ne 0) {
+	    $sleepyTime = Get-Random(1..10)
+            sleep $sleepytime
             $arr_count = $event_pool.Count
             -join $("Found ",$arr_count," log entries from the previous minute.")
             $event_pool = $event_pool | Sort-Object { $_.TimeCreated }
